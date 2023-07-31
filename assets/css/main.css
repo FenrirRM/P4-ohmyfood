@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -46,7 +50,7 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   padding: 40px 25px 60px;
 }
@@ -63,8 +67,45 @@ a {
   border: none;
   border-radius: 25px;
   font-weight: 500;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
   padding: 13px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.operation {
+  padding: 50px 20px 65px;
+}
+.operation h2 {
+  margin-bottom: 30px;
+}
+.operation__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.operation__list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  width: 100%;
+  padding: 25px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+}
+.operation__list--number {
+  background-color: #9356DC;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  min-width: 24px;
+  margin-left: -35px;
+  padding: 2px;
 }
 
 /*# sourceMappingURL=main.css.map */

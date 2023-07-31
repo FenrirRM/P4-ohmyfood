@@ -3,7 +3,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        background-color: #F6F6F6;
+        background-color: $quad-color;
         text-align: center;
         padding: 40px 25px 60px;
         &__text{
@@ -13,7 +13,52 @@
             margin: 15px 0 30px;
         }
         &__btn{
-            @include button
+            @include button;
+            @include shadow;
         }
 }
-   
+
+.operation {
+    padding: 50px 20px 65px;
+
+    h2{
+        margin-bottom: 30px;
+
+    }
+
+    &__list {
+        @include flex-center;
+        flex-direction: column;
+        gap: 25px;
+
+        
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            background-color: $quad-color;
+            border-radius: 25px;
+            width: 100%;
+            padding: 25px;
+            cursor: pointer;
+            flex-wrap: nowrap;
+            @include shadow;
+
+        }
+
+        &--number {
+            background-color: $primary-color;
+            border-radius: 50%;
+            color: white;
+            text-align: center;
+            min-width: 24px;
+            
+            margin-left: -35px;
+            padding: 2px;
+        }
+    }
+
+    
+}
