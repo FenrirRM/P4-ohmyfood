@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/***** Main colors *****/
 body {
   font-family: "Roboto", sans-serif;
   max-width: 1440px;
@@ -13,6 +14,10 @@ h1 {
   font-family: "Shrikhand";
   font-weight: 400;
   font-size: 30px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -34,6 +39,32 @@ h1 {
 }
 .location .fa-solid {
   padding-right: 17px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 40px 25px 60px;
+}
+.introduction__text {
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
+  margin: 15px 0 30px;
+}
+.introduction__btn {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  padding: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */
