@@ -3,7 +3,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-        background-color: $quad-color;
+        background-color: $color-background;
         text-align: center;
         padding: 40px 25px 60px;
         &__text{
@@ -38,7 +38,7 @@
             justify-content: flex-start;
             align-items: center;
             gap: 20px;
-            background-color: $quad-color;
+            background-color: $color-background;
             border-radius: 25px;
             width: 100%;
             padding: 25px;
@@ -49,7 +49,7 @@
         }
 
         &--number {
-            background-color: $primary-color;
+            background-color: $color-primary;
             border-radius: 50%;
             color: white;
             text-align: center;
@@ -61,4 +61,68 @@
     }
 
     
+}
+
+.restaurant{
+    background-color: $color-background;
+    padding: 50px 20px 65px;
+
+    h2{
+        margin-bottom: 25px;
+    }
+
+    .card{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 18px;
+
+        a{
+            width: 100%;
+            border-radius: 20px;
+            height: 250px;
+            color: black;
+            @include shadow;
+            position: relative;
+
+            
+
+            img{
+                object-fit: cover ;
+                width: 100%;
+                height: 174px;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+
+        &__text{
+            display: flex;
+            flex-direction: column;
+            padding: 11px;
+            gap: 5px;
+
+            p{
+                font-weight: 300;
+                font-size: 17px;
+            }
+           
+        }
+
+        &__heart{
+            position: absolute;
+            right: 7%;
+            bottom: 13%;
+        }
+    }
+
+    .new {
+        color: darken($color-tertiary, 40%);
+        background-color: $color-tertiary;
+        border: 5px solid $color-tertiary;
+        border-radius: 5px;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
 }
