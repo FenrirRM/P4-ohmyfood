@@ -1,0 +1,15 @@
+{
+  "name": "p4-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch ./SASS/main.scss:./assets/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.64.2"
+  }
+}

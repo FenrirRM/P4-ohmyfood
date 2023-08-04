@@ -8,6 +8,10 @@
 body {
   font-family: "Roboto", sans-serif;
   max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
 
 h1 {
@@ -22,6 +26,65 @@ a {
 
 li {
   list-style-type: none;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  height: 250px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.card a {
+  color: black;
+}
+.card a img {
+  object-fit: cover;
+  width: 100%;
+  height: 174px;
+  border-radius: 20px 20px 0 0;
+}
+.card__text {
+  display: flex;
+  flex-direction: column;
+  padding: 11px;
+  gap: 5px;
+}
+.card__text p {
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.new {
+  color: #278870;
+  background-color: #99E2D0;
+  border: 5px solid #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.heart-full {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.heart-full:hover {
+  opacity: 1;
+  background-position: 0% 100%;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: opacity 1s ease-in-out;
+}
+
+.fa-heart {
+  position: absolute;
+  cursor: pointer;
+  font-size: 25px;
 }
 
 .logo {
@@ -63,12 +126,16 @@ li {
 .introduction__btn {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: white;
-  height: 50px;
   border: none;
   border-radius: 25px;
   font-weight: 500;
-  padding: 13px;
+  padding: 16px;
+  transition: all 350ms ease-in-out;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+}
+.introduction__btn:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.95);
+  opacity: 0.85;
 }
 
 .operation {
@@ -97,6 +164,17 @@ li {
   cursor: pointer;
   flex-wrap: nowrap;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  transition: all 250ms ease-in-out;
+}
+.operation__list li .fas {
+  transition: 300ms ease-in-out;
+}
+.operation__list li:hover {
+  background-color: #f2eafb;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.45);
+}
+.operation__list li:hover .fas {
+  color: #9356DC;
 }
 .operation__list--number {
   background-color: #9356DC;
@@ -115,50 +193,18 @@ li {
 .restaurant h2 {
   margin-bottom: 25px;
 }
-.restaurant .card {
+.restaurant__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   gap: 18px;
 }
-.restaurant .card a {
-  width: 100%;
-  border-radius: 20px;
-  height: 250px;
-  color: black;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-.restaurant .card a img {
-  object-fit: cover;
-  width: 100%;
-  height: 174px;
-  border-radius: 20px 20px 0 0;
-}
-.restaurant .card__text {
-  display: flex;
-  flex-direction: column;
-  padding: 11px;
-  gap: 5px;
-}
-.restaurant .card__text p {
-  font-weight: 300;
-  font-size: 17px;
-}
-.restaurant .card__heart {
+
+.like {
   position: absolute;
-  right: 7%;
-  bottom: 13%;
-}
-.restaurant .new {
-  color: #278870;
-  background-color: #99E2D0;
-  border: 5px solid #99E2D0;
-  border-radius: 5px;
-  position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 55px;
+  bottom: 21%;
 }
 
 .footer {
@@ -176,10 +222,15 @@ li {
 }
 .footer a {
   display: flex;
+  align-items: center;
   gap: 10px;
   color: white;
   font-size: 16px;
   font-weight: 500;
+  transition: 250ms ease-in-out;
+}
+.footer a:hover {
+  color: #9356DC;
 }
 .footer ul {
   display: flex;
