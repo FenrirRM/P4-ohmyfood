@@ -42,6 +42,54 @@
 
     }
 
+    &__dish{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h3{
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+            padding-bottom: 10px;
+            &::after {
+                content: "";
+                width: 40px;
+                height: 3px;
+                background-color: $color-tertiary;
+                position: absolute;
+                left: 0;
+                bottom: 3px;
+            }
+            
+        }
+
+    }
+
+    &__dessert{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        h3{
+            font-size: 16px;
+            font-weight: 300;
+            position: relative;
+            padding-bottom: 10px;
+            &::after {
+                content: "";
+                width: 40px;
+                height: 3px;
+                background-color: $color-tertiary;
+                position: absolute;
+                left: 0;
+                bottom: 3px;
+            }
+            
+        }
+
+    }
+
     &__card{
         display: flex;
         justify-content: space-between;
@@ -101,6 +149,16 @@
         }
 
 
-
     }
+
+    &__checkout{
+        display: flex;
+        justify-content: center;
+
+        &__btn{
+            @include button;
+            @include shadow;
+        }
+    }
+    
 }

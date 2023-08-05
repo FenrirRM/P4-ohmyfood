@@ -259,6 +259,7 @@ li {
   font-weight: 500;
   padding: 16px;
   min-width: 186px;
+  cursor: pointer;
   transition: all 350ms ease-in-out;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
 }
@@ -442,6 +443,46 @@ li {
   left: 0;
   bottom: 3px;
 }
+.menu__dish {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu__dish h3 {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu__dish h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+}
+.menu__dessert {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu__dessert h3 {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu__dessert h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+}
 .menu__card {
   display: flex;
   justify-content: space-between;
@@ -493,6 +534,26 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.menu__checkout {
+  display: flex;
+  justify-content: center;
+}
+.menu__checkout__btn {
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 16px;
+  min-width: 186px;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+}
+.menu__checkout__btn:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.95);
+  opacity: 0.85;
 }
 
 /*# sourceMappingURL=main.css.map */
