@@ -12,6 +12,9 @@ h1 {
     font-family: 'Shrikhand';
     font-weight: 400;
     font-size: 30px;
+    @media screen and (min-width:1024px){
+        font-size: 37px;
+    }
 }
 
 a{

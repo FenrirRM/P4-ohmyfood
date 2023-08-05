@@ -4,6 +4,10 @@
     height: 250px;
     @include shadow;
     border-radius: 20px;
+    @media screen and (min-width:768px){
+        width: 46%;
+    }
+
 
     
     a{
