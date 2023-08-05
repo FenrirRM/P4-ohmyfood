@@ -1,3 +1,4 @@
+/***** header main *****/
 .logo {
     @include flex-center;
     position: relative;
@@ -18,4 +19,27 @@
     .fa-solid {
         padding-right: 17px;
     }
+}
+
+/***** header menu *****/
+.logo_menu {
+    @include flex-center;
+    position: relative;
+    height: 63px;
+    @media screen and (min-width:1024px){
+        height: 95px;
+    }
+}
+.back_arrow{
+    color: black;
+    position: absolute;
+    left: 24px;
+    top: 38%;
+
+}
+
+.banner{
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
 }

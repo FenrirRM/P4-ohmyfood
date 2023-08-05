@@ -171,6 +171,7 @@ li {
   animation: rotate 2.7s;
 }
 
+/***** header main *****/
 .logo {
   display: flex;
   justify-content: center;
@@ -196,6 +197,33 @@ li {
 }
 .location .fa-solid {
   padding-right: 17px;
+}
+
+/***** header menu *****/
+.logo_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 63px;
+}
+@media screen and (min-width: 1024px) {
+  .logo_menu {
+    height: 95px;
+  }
+}
+
+.back_arrow {
+  color: black;
+  position: absolute;
+  left: 24px;
+  top: 38%;
+}
+
+.banner {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .introduction {
@@ -373,6 +401,98 @@ li {
     flex-direction: row;
     gap: 15px;
   }
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+  padding: 40px 15px;
+  gap: 40px;
+  margin-top: -40px;
+}
+.menu__title {
+  font-family: "Shrikhand";
+  font-size: 28px;
+}
+.menu__like {
+  position: absolute;
+  right: 10%;
+  top: 45px;
+}
+.menu__starter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.menu__starter h3 {
+  font-size: 16px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 10px;
+}
+.menu__starter h3::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+}
+.menu__card {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  height: 70px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu__card__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 1;
+  gap: 5px;
+  overflow: hidden;
+  padding: 13px;
+}
+.menu__card__text h4 {
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__text p {
+  font-size: 16px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__card__price {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 13px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 65px;
+}
+.menu__card__check {
+  margin-right: -59px;
+  width: 59px;
+  height: 100%;
+  color: white;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
