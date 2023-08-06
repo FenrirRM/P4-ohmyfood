@@ -9,7 +9,8 @@
     z-index: 1;
     top: 0;
     left: 0;
-    animation: fade 0.2s 3s forwards ;
+    animation: fade 0.5s 3s forwards ;
+    pointer-events: none;
 
     &__text{
         
