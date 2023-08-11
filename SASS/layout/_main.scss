@@ -6,11 +6,11 @@
         background-color: $color-background;
         text-align: center;
         padding: 40px 25px 60px;
-        @media screen and (min-width:1024px){
+        @media screen and (min-width:1025px){
             padding: 60px 25px 30px;
         }
         &__title{
-            @media screen and (min-width:1024px){
+            @media screen and (min-width:1025px){
                 font-size: 40px;
             }
         }
@@ -28,7 +28,7 @@
 
 .operation {
     padding: 50px 20px 65px;
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1025px){
         padding: 55px 7% 50px;
     }
 
@@ -41,7 +41,7 @@
         @include flex-center;
         flex-direction: column;
         gap: 25px;
-        @media screen and (min-width:1024px){
+        @media screen and (min-width:1025px){
             flex-direction: row;
         }
 
@@ -91,7 +91,7 @@
 .restaurant{
     background-color: $color-background;
     padding: 50px 20px 65px;
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1025px){
         padding: 30px 7% ;
     }
 

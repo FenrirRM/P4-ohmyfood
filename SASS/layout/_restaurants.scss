@@ -10,14 +10,14 @@
     @media screen and (min-width:768px){
         margin: -40px 5% 0;
     }
-    @media screen and (min-width:1024px){
+    @media screen and (min-width:1025px){
         margin: -40px 13% 0;
     }
     &__title{
         display: flex;
         justify-content: space-between;
         padding-right: 10%;
-        @media screen and (min-width:1024px){
+        @media screen and (min-width:1025px){
             justify-content: center;
             padding: 0;
             gap: 15px;
@@ -39,7 +39,7 @@
         flex-direction: column;
         gap: 12px;
         animation: slide 1.2s ;
-        @media screen and (min-width:1024px){
+        @media screen and (min-width:1025px){
             padding: 0 19%;
         }
 
@@ -67,7 +67,7 @@
         flex-direction: column;
         gap: 12px;
         animation: slide 2s ;
-        @media screen and (min-width:1024px){
+        @media screen and (min-width:1025px){
             padding: 0 19%;
         }
 
@@ -95,7 +95,7 @@
         flex-direction: column;
         gap: 12px;
         animation: slide 2.8s ;
-        @media screen and (min-width:1024px){
+        @media screen and (min-width:1025px){
             padding: 0 19%;
         }
 
